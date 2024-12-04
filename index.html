@@ -11,13 +11,11 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link rel="stylesheet" href="main.css" type="text/css">
-        <link rel="stylesheet" href="header-and-footer/header.css">
-        <link rel="stylesheet" href="header-and-footer/footer.css">
     </head>
     <body>
         <div id="header"></div>
-        <div id="Home"></div>
         <main id="Main" class="Main">
+            <div id="Home"></div>
             <div class="Main_Section" id="Banner_Section">
                 <div class="Banner">
                     <div class="Banner_TextBox_Container">
@@ -213,14 +211,18 @@
                 </div>
             </div>
             <div class="Main_Section" id="CTA_Section">
-                <div class="CTA_Container" id="RFQ_Now_Container">
+                <label class="CTA_Container" id="CTA_Container" for="Contact_Toggle">
                     <ul class="CTA_Header">
                         <li class="CTA_Header_li">INTERESTED IN A PRODUCT?</li>
                         <li class="CTA_Header_li">REQUEST A QUOTE NOW!</li>
                     </ul>
                     <p class="CTA_Header_Subtitle">Get special pricing <br/> just for you in <br/> under 24 hours!</p>
-                </div>
+                </label>
             </div>
+
+            <div id="Contact_Pop-Up"></div>
+
+            
             <div id="footer"></div>
         </main>
 
@@ -234,8 +236,15 @@
                 fetch("header-and-footer/footer.html")
                     .then(response => response.text())
                     .then(data => document.getElementById("footer").innerHTML = data);
+
+                fetch("contact/contact-pop-up.html")
+                    .then(response => response.text())
+                    .then(data => document.getElementById("Contact_Pop-Up").innerHTML = data);
             });
         </script>
         <!-- End Header & Footer -->
+        <!-- Contact Script -->
+        <script src="contact/contact-pop-up.js"></script>
+        <!-- End Contact Script -->
     </body>
 </html>
