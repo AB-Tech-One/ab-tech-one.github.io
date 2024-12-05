@@ -185,7 +185,7 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     overflow: auto;
-    background-color: black;
+    background-image: linear-gradient(to bottom right, #0c0f12, #030405);
 }
 
 main {
