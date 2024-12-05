@@ -13,7 +13,7 @@ function sendEmail() {
     }
 
     // Construct the mailto link with form data
-    const mailtoLink = `mailto:dev@ab-techone.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+    const mailtoLink = `mailto:contact@ab-techone.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
     
     // Open the default email client with pre-filled data
     window.location.href = mailtoLink;

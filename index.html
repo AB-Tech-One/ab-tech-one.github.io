@@ -19,15 +19,13 @@
             <div class="Main_Section" id="Banner_Section">
                 <div class="Banner">
                     <div class="Banner_TextBox_Container">
-                        <div class="Banner_TextBox">
-                            <h1 class="Banner_Header">Your One-Stop Tech Solution</h1>
-                            <h2 class="Banner_Subheader">Fast. Available. Reliable.</h2>
-                            <p class="Banner_Contents">The best deals on computers, tablets, phones, point-of-sale systems, and on-premise security systems.</p>
-                            <div class="Banner_Learn_More">Learn More</div>
-                        </div>
+                        <h1 class="Banner_Header">Your One-Stop Tech Solution</h1>
+                        <h2 class="Banner_Subheader">Fast. Available. Reliable.</h2>
+                        <p class="Banner_Contents">The best deals on computers, tablets, phones, point-of-sale systems, and on-premise security systems.</p>
+                        <div class="Banner_Learn_More">Learn More</div>
                     </div>
                     <div class="Banner_Img">
-                        <img class="Img_Banner" src="img/Whole/Logo.png">
+                        <img class="Img_Banner" src="img/Whole/Logo Cropped.png">
                     </div>
                 </div>
             </div>
@@ -220,7 +218,7 @@
                 </label>
             </div>
 
-            <div id="Contact_Pop-Up"></div>
+            <div id="Contact_Pop-Up_Insert"></div>
 
             
             <div id="footer"></div>
@@ -239,12 +237,14 @@
 
                 fetch("contact/contact-pop-up.html")
                     .then(response => response.text())
-                    .then(data => document.getElementById("Contact_Pop-Up").innerHTML = data);
+                    .then(data => document.getElementById("Contact_Pop-Up_Insert").innerHTML = data);
             });
         </script>
         <!-- End Header & Footer -->
         <!-- Contact Script -->
         <script src="contact/contact-pop-up.js"></script>
         <!-- End Contact Script -->
+
+        <script src="anim/index_animations.js"></script>
     </body>
 </html>

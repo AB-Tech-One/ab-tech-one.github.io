@@ -1,5 +1,6 @@
 .Main_Footer_Container {
     width: 95%;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     padding: 80px 80px 20px 80px;
@@ -20,6 +21,14 @@
     align-items: center;
 }
 
+@media (max-width: 920px) {
+    .Main_Footer_Container {
+        width: 99%;
+        padding: 40px 40px 20px 40px;
+    }
+}
+
+
 .Footer_Header_Section {
     width: 100%;
     height: 80px;
@@ -30,7 +39,7 @@
 }
 
 .Footer_Nav_Home {
-    height: 80px;
+    height: 100%;
     margin-right: auto;
 }
 .Footer_Nav_Home_Img {
@@ -40,12 +49,12 @@
 
 .Footer_Socials_Wrapper {
     height: 60px;
-    margin: 20px;
+    margin: 20px 30px 20px 20px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .Footer_Socials_Icon {
@@ -60,10 +69,11 @@
 /* Call-to-Action */
 
 .Footer_CTA_Container {
-    width: 200px;
+    max-width: 200px;
     height: 100%;
     display: flex;
     position: relative;
+    padding: 0 10px 0 10px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -98,6 +108,36 @@
     text-shadow: none;
     white-space: nowrap;
     transition: width 800ms ease;
+}
+
+@media (max-width: 920px) {
+    
+    .Footer_Header_Section {
+        height: 56px;
+    }
+
+
+    .Footer_Socials_Icon {
+        width: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Footer_Header_Section {
+        height: 30px;
+    }
+
+    .Footer_Socials_Wrapper {
+        display: none;
+    }
+
+    .Footer_Socials_Icon {
+        width: 30px;
+    }
+
+    .Footer_CTA_Text {
+        font-size: 0.6rem;
+    }
 }
 
 
@@ -158,4 +198,8 @@
     padding: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.Footer_Notices_Text {
+    font-size: 0.6rem;
 }

@@ -1,5 +1,15 @@
+@keyframes Header_slideInFromTop {
+    0% {
+      transform: translateX(-50%) translateY(-100%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(0);
+    }
+}
+
 .Main_Header_Container {
     width: 90%;
+    max-width: 1450px;
     height: 66px;
     left: 50%;
     transform: translateX(-50%);
@@ -12,6 +22,8 @@
     box-shadow: 0 0 3px #d4fcee;
     backdrop-filter: blur(10px);
     filter: drop-shadow(5px 5px 5px black);
+
+    animation: 500ms ease-out 0s 1 Header_slideInFromTop;
 }
 
 .Main_Header {
@@ -20,6 +32,18 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
+}
+
+@media (max-width: 920px) {
+    .Main_Header_Container {
+        width: 99%;
+        height: 46px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .Main_Header {
+        max-width: 90%;
+    }
 }
 
 .Header_Nav {
@@ -39,6 +63,7 @@
 }
 #Header_Nav_Contact:hover {
     background-image: linear-gradient(to bottom right, rgba(46, 64, 78, 0.7), rgb(29, 39, 47, 0.7));
+    box-shadow: 0 0 4px #d4fcee;
 }
 .Header_Nav:hover {
     transform: scale(1.05);
@@ -55,4 +80,24 @@
 .Header_Nav_Home_Img {
     height: 70%;
     object-fit: contain;
+}
+
+.Header_Nav_Text {
+    text-wrap: nowrap;
+}
+
+
+@media (max-width: 920px) {
+    .Header_Nav {
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    #Header_Nav_Home {
+        padding: 0px 5px 0px 5px;
+    }
+
+    .Header_Nav_Text {
+        font-size: 0.8rem;
+    }
 }
