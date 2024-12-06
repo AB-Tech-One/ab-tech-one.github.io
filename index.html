@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
+        <div id="background"></div>
         <div id="header"></div>
         <main id="Main" class="Main">
             <div id="Home"></div>
@@ -225,7 +226,7 @@
             <div id="footer"></div>
         </main>
 
-        <!-- Header & Footer -->
+        <!-- Header, Footer, Contact, Background -->
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 fetch("header-and-footer/header.html")
@@ -239,10 +240,15 @@
                 fetch("contact/contact-pop-up.html")
                     .then(response => response.text())
                     .then(data => document.getElementById("Contact_Pop-Up_Insert").innerHTML = data);
+
+                fetch("backgrounds/live-squares/live-squares.html")
+                    .then(response => response.text())
+                    .then(data => document.getElementById("background").innerHTML = data);
             });
+        
         </script>
         <script src="header-and-footer/header-and-footer.js"></script>
-        <!-- End Header & Footer -->
+        <!-- End Header, Footer, Contact, Background -->
         <!-- Contact Script -->
         <script src="contact/contact-pop-up.js"></script>
         <!-- End Contact Script -->

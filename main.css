@@ -164,6 +164,12 @@ body, html {
     background-color: #141a1f;
 }
 
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
 main {
     width: 100%;
     background-image: linear-gradient(to bottom right, #25313B, #030405);
@@ -243,8 +249,8 @@ main {
 .Banner:hover {
     background-image: linear-gradient(to bottom right, rgb(46, 64, 78, 0.3), rgb(29, 39, 47, 0.3));
 }
-.Banner:hover .Banner_TextBox {
-    background-image: linear-gradient(to bottom right, #384a56, #1f2a34);
+.Banner:hover .Banner_TextBox_Container {
+    background-image: linear-gradient(to bottom right, #384a56BB, #1f2a34BB);
 }
 .Banner:active .Banner_TextBox_Container {
     transform: scale(0.98);
@@ -260,7 +266,7 @@ main {
     border-radius: 20px;
     filter: drop-shadow();
     cursor: pointer;
-    background-image: linear-gradient(to bottom right, #2e404e, #1d272f);
+    background-image: linear-gradient(to bottom right, #2e404eAA, #1d272fAA);
 }
 
 .Banner_Header {
@@ -305,7 +311,7 @@ main {
     padding: 50px;
     justify-content: center;
     align-items: center;
-    z-index: 0;
+    z-index: 1;
 }
 .Img_Banner {
     width: 100%;
