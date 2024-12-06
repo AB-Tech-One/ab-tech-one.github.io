@@ -155,28 +155,22 @@ p {
 @media (max-width: 920px) {
 
     div {
-        font-size: 0.6rem;
     }
     
     h1 {
-        font-size: 1.5rem;
     }
     h2 {
-        font-size: 1rem;
     }
     h3 {
-        font-size: 0.8rem;
     }
     
     a {
     }
     
     p {
-        font-size: 0.6rem;
     }
 
     img {
-        font-size: 0.6rem;
     }
 }
 
@@ -353,7 +347,6 @@ main {
     }
 
     .Banner_Learn_More {
-        font-size: 0.8rem;
     }
 
     .Banner_Img {
@@ -672,7 +665,6 @@ main {
 
     .FAQs_Details_Toggle:checked ~ .FAQs_Details {
         margin: 0 0 10px 0;
-        font-size: 0.6rem;
     }
 }
 
