@@ -22,8 +22,17 @@
     box-shadow: 0 0 3px #d4fcee;
     backdrop-filter: blur(10px);
     filter: drop-shadow(5px 5px 5px black);
+    transition: transform 0.3s ease-out;
+}
 
-    animation: 500ms ease-out 0s 1 Header_slideInFromTop;
+/* Hidden state: move header out of view */
+.Main_Header_Container.hide-header {
+    transform: translateX(-50%) translateY(-100%);
+}
+
+/* Visible state: move header into view */
+.Main_Header_Container.show-header {
+    transform: translateX(-50%) translateY(0);
 }
 
 .Main_Header {
