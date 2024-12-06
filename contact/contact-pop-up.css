@@ -26,7 +26,7 @@
     height: 100%;
     top: 200;
     left: 0;
-    z-index: 199;
+    z-index: 999;
     position: fixed;
     display: flex;
 }
@@ -42,7 +42,7 @@
     top: 200%;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 200;
+    z-index: 1000;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@
 .Contact_Pop-Up {
     width: 100%;
     height: 100%;
-    z-index: 205;
+    z-index: 1001;
     padding: 50px 100px 50px 100px;
     display: flex;
     flex-wrap: nowrap;

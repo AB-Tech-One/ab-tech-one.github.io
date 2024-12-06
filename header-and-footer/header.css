@@ -13,6 +13,7 @@
     height: 66px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 500;
     position: fixed;
     display: flex;
     justify-content: center;

@@ -3,6 +3,7 @@
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 500;
     padding: 80px 80px 20px 80px;
     display: flex;
     justify-content: center;

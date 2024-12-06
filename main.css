@@ -340,14 +340,14 @@ main {
 
 .Product_Wrapper {
     width: 1000px;
-    height: 450px;
+    height: 400px;
     padding: 15px 20px 15px 20px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
     overflow-x: auto;
     -webkit-user-select: auto; /* Safari */
     -ms-user-select: auto; /* IE 10 and IE 11 */
@@ -366,7 +366,7 @@ main {
 }
 
 .Product_Box {
-    width: 250px;
+    width: 220px;
     height: 100%;
     padding: 20px;
     display: flex;
