@@ -101,6 +101,7 @@
     .Header_Nav {
         padding: 5px;
         margin-right: 5px;
+        border-radius: 10px;
     }
 
     #Header_Nav_Home {

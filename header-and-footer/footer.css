@@ -135,7 +135,8 @@
         width: 30px;
     }
 
-    .Footer_CTA_Text {
+    .Footer_CTA_Container {
+        border-radius: 10px;
     }
 }
 
