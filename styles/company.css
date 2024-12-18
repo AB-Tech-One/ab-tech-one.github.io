@@ -1,0 +1,174 @@
+.Section_Header {
+    width: 1100px;
+}
+
+#Background_Section_Header_Container {
+    margin-top: 78px;
+    opacity: 0;
+}
+.Background_Section {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+#Background_TextBox_Container {
+    opacity: 0;
+}
+
+.Main_Wrapper {
+    width: 1200px;
+    min-height: 450px;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    filter: drop-shadow();
+    cursor: pointer;
+    -webkit-user-select: auto; /* Safari */
+    -ms-user-select: auto; /* IE 10 and IE 11 */
+    user-select: auto; /* Standard syntax */
+}
+
+.Main_TextBox_Container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    border-radius: 20px;
+    filter: drop-shadow();
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #2e404eAA, #1d272fAA);
+}
+
+.Main_TextBox_Img {
+    width: 70%;
+    margin: 10px auto 50px;
+    object-fit: contain;
+}
+
+.Main_TextBox_Header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.Main_TextBox_Subheader {
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.Main_TextBox_Contents {
+    margin: 10px 0 20px 0;
+    transition: all 500ms ease;
+}
+.Main_TextBox_Contents:last-of-type {
+    margin-bottom: 70px;
+}
+
+.Main_TextBox_Learn_More {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 0 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #d4fcee;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.Company_Img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.Img_Company {
+    width: 100%;
+    object-fit: contain;
+    transform: translateY(-10%);
+}
+
+
+/* Core Values */
+
+#Core_Values_Section .Main_Wrapper {
+    height: fit-content;
+    min-height: none;
+    align-items: start;
+}
+
+.Values_TextBoxes_Container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+#Core_Values_Section .Main_TextBox_Container {
+    width: 100%;
+    padding: 30px 40px;
+}
+#Core_Values_Section .Main_TextBox_Container:hover {
+    background-image: linear-gradient(to bottom right, #2e404e, #1d272f);
+}
+#Core_Values_Section .Main_TextBox_Container:active {
+    transform: scale(0.98);
+}
+
+#Core_Values_Section .Main_TextBox_Contents {
+    margin: 0;
+}
+#Core_Values_Section .Main_TextBox_Container:hover .Main_TextBox_Contents {
+    margin: 10px 0;
+}
+
+.Main_TextBox_Details {
+    margin-top: 0;
+    padding-top: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0;
+    border-style: solid;
+    border-color: #d4fcee;
+    border-width: 0;
+    transition: all 300ms ease;
+}
+
+.Values_Details_Toggle {
+    display: none;
+}
+
+.Values_Details_Toggle:checked + .Main_TextBox_Container {
+    background-image: linear-gradient(to bottom right, #2e404e, #1d272f);
+}
+.Values_Details_Toggle:checked + .Main_TextBox_Container .Main_TextBox_Contents {
+    margin: 10px 0;
+    font-weight: bold;
+}
+.Values_Details_Toggle:checked + .Main_TextBox_Container .Main_TextBox_Details {
+    font-size: 1rem;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 1rem;
+    border-style: solid;
+    border-color: #d4fcee;
+    border-width: 1px 0 0;
+}
